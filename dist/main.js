@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// const { container } = require(\"webpack\");\n\nconst home = (condition) => {\n    const container = document.getElementById('container');\n    const div = document.createElement('div');\n    div.setAttribute('class', 'align-loading');\n    container.appendChild(div);\n    if (condition === 'No') {\n        div.innerHTML = '<span>Enter a city name in the search bar</span>';\n    } else {\n        div.innerHTML = '<span>No valid city. Try again.</span>';\n    }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://weather-app/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// const { container } = require(\"webpack\");\n\nconst home = (condition) => {\n    const container = document.getElementById('container');\n    const div = document.createElement('div');\n    div.setAttribute('class', 'align-loading');\n    container.appendChild(div);\n    if (condition === 'No') {\n        div.innerHTML = '<span>Waiting for a city ...</span>';\n    } else {\n        div.innerHTML = '<span>No valid city. Try again.</span>';\n    }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://weather-app/./src/home.js?");
 
 /***/ }),
 
