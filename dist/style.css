@@ -50,11 +50,12 @@ input {
 	padding: 10px;
 	padding-top: 2.5px;
 	padding-bottom: 2.5px;
-cursor: pointer;
+	cursor: pointer;
 }
 
 #search {
-	font-size: 20px;
+	font-size: 17px;
+	padding-left: 2px;
 }
 
 .align-loading {
