@@ -1,7 +1,7 @@
 # Weather App
 
 ## Project Concept
-A current weather check site were users can search by city and add favorites. Weather data gathered from OpenWeatherMap and favorites saved to localStorage.
+A current weather check site were users can search by city. Weather data gathered from OpenWeatherMap.
 
 ## Project Screenshot
 ![screenshot](dist/img/screenshot.jpeg)
