@@ -4,7 +4,7 @@
 A current weather check site were users can search by city. Weather data gathered from OpenWeatherMap.
 
 ## Project Screenshot
-![screenshot](dist/img/screenshot.jpeg)
+![screenshot](dist/img/screenshot.png)
 
 ## Built With
 

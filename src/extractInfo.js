@@ -32,7 +32,7 @@ const temp = (input) => {
   if (option === 'ºC') {
     actual = calTempCelsius(input);
   } else {
-    actual = calTempFah;
+    actual = calTempFah(input);
   }
   return actual;
 };
