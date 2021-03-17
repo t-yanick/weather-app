@@ -35,11 +35,17 @@ Run ```npm start``` and the site will open in the browser at ```localhost:8080``
 
 ## Generating necessary API keys
 
+### Unsplash API
+- Open the URL `www.unsplash.com`
+- Create an account or signin if you already have an account.
+- Navigate to API and generate an API key.
+- In the project `src` directory, open `getdata.js` and insert the generated key `https://api.unsplash.com/photos/random?orientation=landscape&count=1&client_id=[Enter_generated_key_here]&query=${input}`
+
 ### Openweathermap API
 - Open the URL `www.openweathermap.org`
 - Create an account or signin if you already have an account.
 - Navigate to API and generate an API key.
-- In the project `src` directory, open `getdata.js` and insert the generated key `https://api.unsplash.com/photos/random?orientation=landscape&count=1&client_id=[Enter_generated_key_here]&query=${input}`
+- In the project `src` directory, open `getdata.js` and insert the generated key `https://api.openweathermap.org/data/2.5/weather?q=${input},&APPID=[Enter_generated_key_here]`
 
 ## Authors
 
