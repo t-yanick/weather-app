@@ -14,17 +14,17 @@ const cord = (input) => {
   return location;
 };
 
-function calTempCelsius(input) {
+const calTempCelsius = (input) => {
   let temp = Math.round(input - 273.15);
   temp += 'ºC';
   return temp;
-}
+};
 
-function calTempFah(input) {
+const calTempFah = (input) => {
   let temp = Math.round(input - 273.15) * 9 / 5 + 32;
   temp += 'ºF';
   return temp;
-}
+};
 
 const temp = (input) => {
   const option = document.getElementById('select-temperature');
