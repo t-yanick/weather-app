@@ -2,35 +2,35 @@
 
 const city = (input) => {
   const city = input.name;
-  const { country } = input.sys;
-  const output = `${city}, ${country}`;
+  const country = input.sys.country;
+  const output = city + ', ' + country;
   return output;
 };
 
 const cord = (input) => {
-  const { lon } = input.coord;
-  const { lat } = input.coord;
-  const location = `Longitude ${lon}, Latitude ${lat}`;
+  const lat = input.coord.lat;
+  const lon = input.coord.lon;
+  const location = 'Latitude ' + lat + ', Longitude ' + lon;
   return location;
 };
 
-const calTempCelsius = (input) => {
+const calTempCelcius = (input) => {
   let temp = Math.round(input - 273.15);
   temp += 'ºC';
   return temp;
 };
 
 const calTempFah = (input) => {
-  let temp = Math.round(input - 273.15) * 9 / 5 + 32;
+  let temp = Math.round((input - 273.15) * 9 / 5 + 32);
   temp += 'ºF';
   return temp;
 };
 
 const temp = (input) => {
-  const option = document.getElementById('select-temperature');
+  const option = document.getElementById('select-temperature').value;
   let actual;
   if (option === 'ºC') {
-    actual = calTempCelsius(input);
+    actual = calTempCelcius(input);
   } else {
     actual = calTempFah(input);
   }
@@ -38,7 +38,7 @@ const temp = (input) => {
 };
 
 const hum = (input) => {
-  const humidity = `${input.main.humidity}%`;
+  const humidity = input.main.humidity + '%';
   return humidity;
 };
 

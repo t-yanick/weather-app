@@ -16,15 +16,15 @@ const render = (img, data) => {
   const humidity = hum(data);
   const condition = status(data);
   const tempMax = temp(data.main.temp_max);
-  const tempMin = temp(data.main.temp_min);
+  const temMin = temp(data.main.temp_min);
   const container = document.getElementById('container');
   clear(container);
   const Card = document.createElement('div');
   const background = document.createElement('div');
   container.appendChild(Card);
   Card.appendChild(background);
-  background.innerHTML = `<img src="${img}" class="background">`;
-  const changeBtn = document.getElementById('select-temperature');
+  background.innerHTML = `<img src="${img}" class="background" >`;
+  const changebttn = document.getElementById('select-temperature');
   const dataContainer = document.createElement('div');
   const titleCity = document.createElement('p');
   const ubication = document.createElement('p');
@@ -48,10 +48,10 @@ const render = (img, data) => {
   dataContainer.setAttribute('class', 'align-container center');
   titleCity.setAttribute('class', 'title');
   ubication.setAttribute('class', 'location normal-margin');
-  tempNow.setAttribute('class', 'tempNow normal-align');
-  feelsTemp.setAttribute('class', 'feels_like normal-align');
-  Humidity.setAttribute('class', 'feels_like normal-align');
-  description.setAttribute('class', 'feels_like normal-align');
+  tempNow.setAttribute('class', 'tempNow normal-margin');
+  feelsTemp.setAttribute('class', 'feels_like normal-margin');
+  Humidity.setAttribute('class', 'feels_like normal-margin');
+  description.setAttribute('class', 'feels_like normal-margin');
   titleCity.textContent = `${title}`;
   ubication.textContent = `${location}`;
   tempNow.textContent = `${actualTemp}`;
@@ -62,8 +62,8 @@ const render = (img, data) => {
   Max.setAttribute('class', 'temp margin-right');
   Min.setAttribute('class', 'temp');
   Max.innerHTML = `Max<br>${tempMax}`;
-  Min.innerHTML = `Min<br>${tempMin}`;
-  changeBtn.addEventListener('click', change => {
+  Min.innerHTML = `Min<br>${temMin}`;
+  changebttn.addEventListener('click', change => {
     render(img, data);
   });
 };
