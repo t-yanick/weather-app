@@ -6,15 +6,15 @@ import {
 
 import home from './home';
 
-async function getImage(input, info) {
-  const url = `https://api.unsplash.com/photos/random?orientation=landscape&count=1&client_id=[API_KEY]&query=${input}`;
+const getImage = async (input, info) => {
+  const url = `https://api.unsplash.com/photos/random?orientation=landscape&count=1&client_id=7XimdnnMOSmoeVFofk7rEM4_ApTXYE83u8ZAAlOfPZU&query=${input}`;
   const response = await fetch(url);
   const data = await response.json();
   render(data[0].urls.regular, info);
-}
+};
 
-async function fetchData(input) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${input},&APPID=[API_KEY]`;
+const fetchData = async (input) => {
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${input},&APPID=694ce3be09a1d625ba532a57008093ca`;
   const response = await fetch(url);
   const data = await response.json();
   return new Promise((resolve, reject) => {
@@ -24,7 +24,7 @@ async function fetchData(input) {
       resolve(data);
     }
   });
-}
+};
 
 async function getData(input) {
   try {

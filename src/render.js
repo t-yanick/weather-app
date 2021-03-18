@@ -2,11 +2,11 @@ import {
   city, cord, temp, hum, status,
 } from './extractInfo';
 
-function clear(container) {
+const clear = (container) => {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
-}
+};
 
 const render = (img, data) => {
   const title = city(data);
