@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import getData from './getdata';
 import home from './home';
 
