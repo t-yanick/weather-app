@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	background-color: #51aee415;
+	font-size: 35px;
+	height: 100px;
+	color: green;
+}
+
+.mr-l {
+	margin-left: 40px;
+}
+
+.mr-r {
+	margin-right: 40px;
+}
+
+.pd-t {
+	padding-top: 20px;
+}
+
+input {
+	height: 25px;
+	border-radius: 5px;
+}
+
+#search-btn {
+	padding: 2.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+#search-btn:hover {
+	color: blue;
+	animation-duration: 2s;
+	cursor: pointer;
+}
+
+#select-temperature {
+	padding: 10px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	cursor: pointer;
+}
+
+#search {
+	font-size: 17px;
+	padding-left: 2px;
+}
+
+.align-loading {
+	text-align: center;
+	width: 100%;
+	font-size: 50px; 
+	padding-top: 200px;
+	color: rgb(72, 167, 221);
+}
+
+.background {
+	width: 100%;
+	height: 100vh;
+}
+
+.align-container {
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+
+.title {
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.location {
+	font-size: 30px;
+}
+
+.tempNow {
+	font-size: 50px;
+}
+
+.normal-margin {
+	margin-bottom: 25px;
+}
+
+.feels_like {
+	font-size: 20px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.temp {
+	font-size: 30px;
+}
+
+.margin-right {
+	margin-right: 10%; 
+}
