@@ -2,15 +2,15 @@
 
 const city = (input) => {
   const city = input.name;
-  const country = input.sys.country;
-  const output = city + ', ' + country;
+  const { country } = input.sys;
+  const output = `${city}, ${country}`;
   return output;
 };
 
 const cord = (input) => {
-  const lat = input.coord.lat;
-  const lon = input.coord.lon;
-  const location = 'Latitude ' + lat + ', Longitude ' + lon;
+  const { lat } = input.coord;
+  const { lon } = input.coord;
+  const location = `Latitude ${lat}, Longitude ${lon}`;
   return location;
 };
 
@@ -38,7 +38,7 @@ const temp = (input) => {
 };
 
 const hum = (input) => {
-  const humidity = input.main.humidity + '%';
+  const humidity = `${input.main.humidity}%`;
   return humidity;
 };
 
