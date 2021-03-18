@@ -26,7 +26,7 @@ const fetchData = async (input) => {
   });
 };
 
-async function getData(input) {
+const getData = async (input) => {
   try {
     const request = await fetchData(input);
     getImage(request.weather[0].main, request);
@@ -35,6 +35,6 @@ async function getData(input) {
     clear(container);
     home('Yes');
   }
-}
+};
 
 export default getData;
