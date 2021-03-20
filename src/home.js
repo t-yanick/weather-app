@@ -1,3 +1,6 @@
+var d = new Date().toLocaleString();
+document.getElementById("demo").innerHTML = d;
+
 const home = (condition) => {
   const container = document.getElementById('container');
   const div = document.createElement('div');
